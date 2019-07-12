@@ -7,7 +7,8 @@ URL:     https://getmonero.org/
 VCS:     {{{ git_dir_vcs }}}
 Source0: {{{ git_archive }}}
 
-BuildRequires: gcc >= 4.7.3
+BuildRequires: gcc
+BuildRequires: gcc-c++
 BuildRequires: cmake >= 3.0.0
 BuildRequires: pkgconf
 BuildRequires: boost-devel
