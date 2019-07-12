@@ -1,4 +1,4 @@
-Name:    {{{ git_dir_name }}}
+Name:    {{{ git_name }}}
 Version: {{{ git_dir_version }}}
 Release: 1%{?dist}
 Summary: Secure, private, untraceable cryptocurrency
