@@ -5,7 +5,7 @@ Summary: Secure, private, untraceable cryptocurrency
 License: BSD
 URL:     https://getmonero.org/
 VCS:     {{{ git_dir_vcs }}}
-Source0: {{{ git_dir_pack }}}
+Source0: {{{ git_archive }}}
 
 BuildRequires: gcc >= 4.7.3
 BuildRequires: cmake >= 3.0.0
