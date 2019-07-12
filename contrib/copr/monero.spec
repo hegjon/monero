@@ -1,10 +1,11 @@
-Name:    monero
-Version: 0.13.0.3
+Name:    {{{ git_dir_name }}}
+Version: {{{ git_dir_version }}}
 Release: 1%{?dist}
 Summary: Secure, private, untraceable cryptocurrency
 License: BSD
 URL:     https://getmonero.org/
-Source0: https://github.com/monero-project/monero/archive/v%{version}.tar.gz#/%{name}-%{version}.tar.gz
+VCS:     {{{ git_dir_vcs }}}
+Source0: {{{ git_dir_pack }}}
 
 BuildRequires: gcc >= 4.7.3
 BuildRequires: cmake >= 3.0.0
@@ -55,7 +56,7 @@ Summary: Monery development files
 %{summary}.
 
 %prep
-%setup -q
+{{{ git_dir_setup_macro }}}
 
 %build
 mkdir -p build
@@ -87,5 +88,4 @@ make install DESTDIR=%{buildroot}
 %{_includedir}/wallet/api/wallet2_api.h
 
 %changelog
-* Thu May 17 2018 Jonny Heggheim <hegjon@gmail.com> - 0.12.0.0-1
-- Updated to 0.12.0.0
+{{{ git_dir_changelog }}}
