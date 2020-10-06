@@ -1,10 +1,10 @@
 Name:    {{{ git_name }}}
 Version: 0.17.0
-Release: {{{ git_dir_version }}}%{?dist}
+Release: {{{ git_version }}}%{?dist}
 Summary: Secure, private, untraceable cryptocurrency
 License: BSD
 URL:     https://getmonero.org/
-VCS:     {{{ git_dir_vcs }}}
+VCS:     {{{ git_vcs }}}
 Source0: {{{ git_pack }}}
 
 BuildRequires: gcc
